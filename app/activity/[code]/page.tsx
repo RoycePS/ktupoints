@@ -1,5 +1,7 @@
 import Link from "next/link";
-import data from "../../data/activity-points.json";
+import dataFromFile from "../../../data/activity-points.json";
+
+const data = dataFromFile as any;
 
 export async function generateStaticParams() {
     const params = [];
@@ -17,13 +19,12 @@ export default async function ActivityPage({ params }: { params: Promise<{ code:
     const { code } = await params;
     const decodedCode = decodeURIComponent(code);
 
-    let foundActivity = null;
+    let foundActivity: any = null;
     let groupName = "";
 
     for (const group of data.groups) {
         for (const category of group.categories) {
             for (const activity of category.activities) {
-                // @ts-ignore
                 if (activity.code === decodedCode) {
                     foundActivity = activity;
                     groupName = group.groupName;
@@ -42,19 +43,14 @@ export default async function ActivityPage({ params }: { params: Promise<{ code:
             <p>Code: {foundActivity.code}</p>
             <p>Group: {groupName}</p>
 
-            {/* @ts-ignore */}
             {foundActivity.points && <p>Points: {foundActivity.points}</p>}
-            {/* @ts-ignore */}
             {foundActivity.maxPoints && <p>Max Points: {foundActivity.maxPoints}</p>}
-            {/* @ts-ignore */}
             {foundActivity.proof && <p>Proof: {foundActivity.proof}</p>}
 
-            {/* @ts-ignore */}
             {foundActivity.levels && (
                 <div>
                     <h3>Levels</h3>
                     <ul>
-                        {/* @ts-ignore */}
                         {Object.entries(foundActivity.levels).map(([level, points]) => (
                             <li key={level}>{level}: {points as number}</li>
                         ))}
