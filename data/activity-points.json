@@ -1,0 +1,843 @@
+{
+    "groups": [
+        {
+            "groupId": "GROUP_I",
+            "groupName": "Co-curricular Activities",
+            "minRequired": 40,
+            "maxCounted": 40,
+            "categories": [
+                {
+                    "categoryId": "sports_arts_cultural",
+                    "categoryName": "Sports, Arts & Cultural Activities",
+                    "activities": [
+                        {
+                            "code": "1.1",
+                            "title": "Participation in Sports, Arts & Cultural Activities",
+                            "levels": {
+                                "college": 1,
+                                "zonal": 5,
+                                "state": 10,
+                                "national": 20,
+                                "international": 40
+                            },
+                            "maxPoints": 40,
+                            "proof": "Participation Certificate",
+                            "rules": [
+                                "highest_level_only"
+                            ]
+                        },
+                        {
+                            "code": "1.2",
+                            "title": "Winners - Single Events (Sports, Arts & Cultural)",
+                            "levels": {
+                                "college": 5,
+                                "zonal": 10,
+                                "state": 20,
+                                "national": 40,
+                                "international": 40
+                            },
+                            "maxPoints": 40,
+                            "proof": "Winner Certificate",
+                            "rules": [
+                                "highest_level_only",
+                                "winner_overrides_participation"
+                            ]
+                        },
+                        {
+                            "code": "1.3",
+                            "title": "Winners - Group Events (Sports, Arts & Cultural)",
+                            "levels": {
+                                "college": 3,
+                                "zonal": 5,
+                                "state": 15,
+                                "national": 30,
+                                "international": 40
+                            },
+                            "maxPoints": 40,
+                            "proof": "Winner Certificate",
+                            "rules": [
+                                "highest_level_only",
+                                "winner_overrides_participation"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "categoryId": "publications",
+                    "categoryName": "College Magazine Publication",
+                    "activities": [
+                        {
+                            "code": "1.4",
+                            "title": "College Magazine Publication (Articles/Essays/Poems/Technical Writing)",
+                            "points": 5,
+                            "maxPoints": 20,
+                            "maxPerYear": 20,
+                            "proof": "Published copy of magazine",
+                            "rules": [
+                                "per_publication"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "categoryId": "driving_license",
+                    "categoryName": "Driving License",
+                    "activities": [
+                        {
+                            "code": "1.5",
+                            "title": "Four-Wheeler Driving License (obtained during course duration)",
+                            "points": 5,
+                            "maxPoints": 5,
+                            "proof": "Driving License copy",
+                            "rules": [
+                                "one_time"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "categoryId": "community_service",
+                    "categoryName": "Community Service & Outreach",
+                    "activities": [
+                        {
+                            "code": "1.6",
+                            "title": "Community Service (2 days)",
+                            "points": 5,
+                            "maxPoints": 10,
+                            "proof": "Certificate from organizing body",
+                            "rules": []
+                        },
+                        {
+                            "code": "1.7",
+                            "title": "Community Service (up to 1 week)",
+                            "points": 10,
+                            "maxPoints": 10,
+                            "proof": "Certificate from organizing body",
+                            "rules": []
+                        },
+                        {
+                            "code": "1.8",
+                            "title": "Blood Donation",
+                            "points": 5,
+                            "maxPoints": 10,
+                            "proof": "Blood donation certificate",
+                            "rules": [
+                                "per_donation"
+                            ]
+                        },
+                        {
+                            "code": "1.9",
+                            "title": "THRIVE Project (Govt. of Kerala)",
+                            "points": 10,
+                            "maxPoints": 20,
+                            "perSemester": true,
+                            "proof": "THRIVE participation certificate",
+                            "rules": [
+                                "per_semester_cap"
+                            ]
+                        },
+                        {
+                            "code": "1.10",
+                            "title": "Tree Planting (Geo-tagged)",
+                            "points": 5,
+                            "maxPoints": 5,
+                            "proof": "Geo-tagged photo with certificate",
+                            "rules": [
+                                "one_time"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "categoryId": "nss_ncc_nso",
+                    "categoryName": "NSS / NCC / NSO",
+                    "activities": [
+                        {
+                            "code": "1.11",
+                            "title": "NSS Volunteer (2 years)",
+                            "points": 30,
+                            "maxPoints": 30,
+                            "proof": "NSS Volunteer Certificate",
+                            "rules": [
+                                "one_time"
+                            ]
+                        },
+                        {
+                            "code": "1.12",
+                            "title": "University Leadership Camp (100 hours)",
+                            "points": 20,
+                            "maxPoints": 20,
+                            "proof": "Leadership Camp Certificate",
+                            "rules": []
+                        },
+                        {
+                            "code": "1.13",
+                            "title": "Winners - State NSS Events",
+                            "points": 15,
+                            "maxPoints": 15,
+                            "proof": "Winner Certificate",
+                            "rules": []
+                        },
+                        {
+                            "code": "1.14",
+                            "title": "Special Service / Appreciation Certificate",
+                            "points": 15,
+                            "maxPoints": 40,
+                            "proof": "Appreciation Certificate",
+                            "rules": []
+                        },
+                        {
+                            "code": "1.15",
+                            "title": "State / National Awards",
+                            "levels": {
+                                "state": 15,
+                                "national": 25
+                            },
+                            "maxPoints": 40,
+                            "proof": "Award Certificate",
+                            "rules": [
+                                "highest_level_only"
+                            ]
+                        },
+                        {
+                            "code": "1.16",
+                            "title": "Approved National Camps / NIC / NYF",
+                            "points": 15,
+                            "maxPoints": 15,
+                            "proof": "Camp participation certificate",
+                            "rules": []
+                        },
+                        {
+                            "code": "1.17",
+                            "title": "10-Day Volunteer Service (50 hours)",
+                            "points": 15,
+                            "maxPoints": 15,
+                            "proof": "Volunteer service certificate",
+                            "rules": []
+                        },
+                        {
+                            "code": "1.18",
+                            "title": "RDC / IDC / International Events",
+                            "points": 25,
+                            "maxPoints": 25,
+                            "proof": "Event participation certificate",
+                            "rules": []
+                        },
+                        {
+                            "code": "1.19",
+                            "title": "NCC Certificates",
+                            "levels": {
+                                "ncc_b": 20,
+                                "ncc_c": 30,
+                                "one_year_parade": 10
+                            },
+                            "maxPoints": 30,
+                            "proof": "NCC Certificate",
+                            "rules": [
+                                "highest_level_only"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "categoryId": "health_life_skills",
+                    "categoryName": "Health & Life Skills",
+                    "activities": [
+                        {
+                            "code": "1.20",
+                            "title": "First Aid / CPR / Fire Safety Training",
+                            "points": 5,
+                            "maxPoints": 10,
+                            "proof": "Training completion certificate",
+                            "rules": [
+                                "per_training"
+                            ]
+                        },
+                        {
+                            "code": "1.21",
+                            "title": "Swimming Proficiency",
+                            "points": 5,
+                            "maxPoints": 5,
+                            "proof": "Swimming proficiency certificate",
+                            "rules": [
+                                "one_time"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groupId": "GROUP_II",
+            "groupName": "Professional Development",
+            "minRequired": 40,
+            "maxCounted": 40,
+            "categories": [
+                {
+                    "categoryId": "tech_events",
+                    "categoryName": "Technical Events",
+                    "activities": [
+                        {
+                            "code": "2.1",
+                            "title": "Tech-Fest Participation",
+                            "levels": {
+                                "college": 2,
+                                "zonal": 5,
+                                "state": 10,
+                                "national": 20,
+                                "international": 30
+                            },
+                            "maxPoints": 30,
+                            "proof": "Participation Certificate",
+                            "rules": [
+                                "highest_level_only"
+                            ]
+                        },
+                        {
+                            "code": "2.2",
+                            "title": "Tech-Fest Winners",
+                            "levels": {
+                                "college": 5,
+                                "zonal": 10,
+                                "state": 20,
+                                "national": 40,
+                                "international": 40
+                            },
+                            "maxPoints": 40,
+                            "proof": "Winner Certificate",
+                            "rules": [
+                                "highest_level_only",
+                                "winner_overrides_participation"
+                            ]
+                        },
+                        {
+                            "code": "2.3",
+                            "title": "Professional Society Events - Participation",
+                            "levels": {
+                                "college": 2,
+                                "zonal": 5,
+                                "state": 10,
+                                "national": 15,
+                                "international": 20
+                            },
+                            "maxPoints": 20,
+                            "proof": "Participation Certificate",
+                            "rules": [
+                                "highest_level_only"
+                            ]
+                        },
+                        {
+                            "code": "2.4",
+                            "title": "Professional Society Events - Winners",
+                            "levels": {
+                                "college": 3,
+                                "zonal": 7,
+                                "state": 15,
+                                "national": 25,
+                                "international": 35
+                            },
+                            "maxPoints": 35,
+                            "proof": "Winner Certificate",
+                            "rules": [
+                                "highest_level_only",
+                                "winner_overrides_participation"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "categoryId": "academic_presentations",
+                    "categoryName": "Academic Presentations",
+                    "activities": [
+                        {
+                            "code": "2.5",
+                            "title": "Conferences / Workshops (Top Institutes)",
+                            "points": 5,
+                            "maxPoints": 15,
+                            "proof": "Certificate from organizing institute",
+                            "rules": [
+                                "per_event"
+                            ]
+                        },
+                        {
+                            "code": "2.6",
+                            "title": "Poster Presentation",
+                            "points": 5,
+                            "maxPoints": 40,
+                            "proof": "Poster presentation certificate",
+                            "rules": [
+                                "per_event"
+                            ]
+                        },
+                        {
+                            "code": "2.7",
+                            "title": "Paper Presentation (Top Institutes)",
+                            "points": 10,
+                            "maxPoints": 40,
+                            "proof": "Paper presentation certificate",
+                            "rules": [
+                                "per_event"
+                            ]
+                        },
+                        {
+                            "code": "2.8",
+                            "title": "Paper Presentation - Winners",
+                            "levels": {
+                                "first": 20,
+                                "second_third": 15
+                            },
+                            "maxPoints": 40,
+                            "proof": "Winner certificate",
+                            "rules": [
+                                "highest_level_only"
+                            ]
+                        },
+                        {
+                            "code": "2.9",
+                            "title": "Paper Presentation (KTU Colleges)",
+                            "levels": {
+                                "participation": 5,
+                                "winner_first": 10,
+                                "winner_second_third": 7
+                            },
+                            "maxPoints": 40,
+                            "proof": "Certificate from KTU college",
+                            "rules": []
+                        }
+                    ]
+                },
+                {
+                    "categoryId": "leadership_roles",
+                    "categoryName": "Leadership & Roles",
+                    "activities": [
+                        {
+                            "code": "2.11",
+                            "title": "Professional Society Membership",
+                            "levels": {
+                                "member": 5,
+                                "executive": 10,
+                                "chair_lead": 15
+                            },
+                            "maxPoints": 15,
+                            "proof": "Membership/position certificate",
+                            "rules": [
+                                "highest_level_only"
+                            ]
+                        },
+                        {
+                            "code": "2.12",
+                            "title": "College / University Union",
+                            "levels": {
+                                "college_office_bearer": 20,
+                                "university_office_bearer": 30
+                            },
+                            "maxPoints": 30,
+                            "proof": "Office bearer certificate",
+                            "rules": [
+                                "highest_level_only"
+                            ]
+                        },
+                        {
+                            "code": "2.13",
+                            "title": "Department Association",
+                            "points": 5,
+                            "maxPoints": 10,
+                            "perYear": true,
+                            "proof": "Association certificate",
+                            "rules": [
+                                "per_year"
+                            ]
+                        },
+                        {
+                            "code": "2.14",
+                            "title": "Class Representative",
+                            "points": 5,
+                            "maxPoints": 10,
+                            "perYear": true,
+                            "proof": "Class representative certificate",
+                            "rules": [
+                                "per_year"
+                            ]
+                        },
+                        {
+                            "code": "2.15",
+                            "title": "Industrial Visit Coordinator",
+                            "points": 5,
+                            "maxPoints": 5,
+                            "proof": "Coordinator certificate",
+                            "rules": [
+                                "one_time"
+                            ]
+                        },
+                        {
+                            "code": "2.16",
+                            "title": "Placement Cell",
+                            "levels": {
+                                "executive": 5,
+                                "coordinator": 10
+                            },
+                            "maxPoints": 10,
+                            "proof": "Placement cell certificate",
+                            "rules": [
+                                "highest_level_only"
+                            ]
+                        },
+                        {
+                            "code": "2.17",
+                            "title": "IEDC Cell",
+                            "levels": {
+                                "exec_office_bearer": 5,
+                                "event_coordinator": 5
+                            },
+                            "maxPoints": 10,
+                            "proof": "IEDC certificate",
+                            "rules": []
+                        },
+                        {
+                            "code": "2.18",
+                            "title": "YIP (K-DISC) - Student Coordinator",
+                            "points": 5,
+                            "maxPoints": 5,
+                            "proof": "YIP coordinator certificate",
+                            "rules": [
+                                "one_time"
+                            ]
+                        },
+                        {
+                            "code": "2.19",
+                            "title": "STRIDE",
+                            "levels": {
+                                "volunteer": 5,
+                                "member": 5,
+                                "leadership": 10,
+                                "high_impact_project": 20
+                            },
+                            "maxPoints": 20,
+                            "proof": "STRIDE certificate",
+                            "rules": [
+                                "highest_level_only"
+                            ]
+                        },
+                        {
+                            "code": "2.20",
+                            "title": "College Magazine Editorial Board",
+                            "points": 5,
+                            "maxPoints": 10,
+                            "proof": "Editorial board certificate",
+                            "rules": []
+                        },
+                        {
+                            "code": "2.21",
+                            "title": "Hobby Clubs (Exec/Convenor)",
+                            "points": 5,
+                            "maxPoints": 10,
+                            "perYear": true,
+                            "proof": "Club certificate",
+                            "rules": [
+                                "per_year"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "categoryId": "foss_internships",
+                    "categoryName": "FOSS & Internships",
+                    "activities": [
+                        {
+                            "code": "2.22",
+                            "title": "FOSS / Open Source",
+                            "levels": {
+                                "club_member": 5,
+                                "lead": 10,
+                                "open_source_contribution": 10,
+                                "internship": 10
+                            },
+                            "maxPoints": 20,
+                            "proof": "Certificate/proof of contribution",
+                            "rules": []
+                        },
+                        {
+                            "code": "2.23",
+                            "title": "Short-Term Internship (≥2 weeks)",
+                            "points": 10,
+                            "maxPoints": 10,
+                            "proof": "Internship completion certificate",
+                            "rules": [
+                                "one_time"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "categoryId": "certifications",
+                    "categoryName": "Certifications",
+                    "activities": [
+                        {
+                            "code": "2.24",
+                            "title": "English Proficiency (TOEFL / IELTS / PTE / BEC)",
+                            "maxPoints": 30,
+                            "proof": "Score card/certificate",
+                            "rules": [
+                                "score_based"
+                            ]
+                        },
+                        {
+                            "code": "2.25",
+                            "title": "Aptitude Tests (GRE / GATE / CAT / GMAT)",
+                            "maxPoints": 30,
+                            "proof": "Score card",
+                            "rules": [
+                                "score_based"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groupId": "GROUP_III",
+            "groupName": "Advanced Achievements",
+            "minRequired": 40,
+            "maxCounted": 40,
+            "categories": [
+                {
+                    "categoryId": "reports_projects",
+                    "categoryName": "Reports & Projects",
+                    "activities": [
+                        {
+                            "code": "3.1",
+                            "title": "Industrial Visit Report",
+                            "points": 5,
+                            "maxPoints": 20,
+                            "proof": "Approved IV report",
+                            "rules": [
+                                "per_report"
+                            ]
+                        },
+                        {
+                            "code": "3.2",
+                            "title": "Best Project / Seminar",
+                            "points": 5,
+                            "maxPoints": 5,
+                            "proof": "Best project/seminar certificate",
+                            "rules": [
+                                "one_time"
+                            ]
+                        },
+                        {
+                            "code": "3.3",
+                            "title": "Long-Term Internship (≥3.5 months)",
+                            "points": 15,
+                            "maxPoints": 15,
+                            "proof": "Internship completion certificate",
+                            "rules": [
+                                "one_time"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "categoryId": "programs",
+                    "categoryName": "Programs",
+                    "activities": [
+                        {
+                            "code": "3.4",
+                            "title": "LEAP (IIT Madras)",
+                            "maxPoints": 30,
+                            "proof": "LEAP certificate",
+                            "rules": [
+                                "program_based"
+                            ]
+                        },
+                        {
+                            "code": "3.5",
+                            "title": "YIP (K-DISC)",
+                            "maxPoints": 35,
+                            "proof": "YIP certificate",
+                            "rules": [
+                                "program_based"
+                            ]
+                        },
+                        {
+                            "code": "3.6",
+                            "title": "STRIDE",
+                            "maxPoints": 35,
+                            "proof": "STRIDE certificate",
+                            "rules": [
+                                "program_based"
+                            ]
+                        },
+                        {
+                            "code": "3.7",
+                            "title": "GDC AI Workforce",
+                            "maxPoints": 35,
+                            "proof": "GDC certificate",
+                            "rules": [
+                                "program_based"
+                            ]
+                        },
+                        {
+                            "code": "3.8",
+                            "title": "ICFOSS Certified Solution",
+                            "points": 25,
+                            "maxPoints": 25,
+                            "proof": "ICFOSS certificate",
+                            "rules": [
+                                "one_time"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "categoryId": "innovation_patents",
+                    "categoryName": "Innovation, Patents & Research",
+                    "activities": [
+                        {
+                            "code": "3.9",
+                            "title": "Registered Startup",
+                            "points": 30,
+                            "maxPoints": 30,
+                            "proof": "Startup registration certificate",
+                            "rules": [
+                                "one_time"
+                            ]
+                        },
+                        {
+                            "code": "3.10",
+                            "title": "Patents",
+                            "levels": {
+                                "filed": 20,
+                                "published": 30,
+                                "granted_licensed": 40
+                            },
+                            "maxPoints": 40,
+                            "proof": "Patent certificate/proof",
+                            "rules": [
+                                "highest_level_only"
+                            ]
+                        },
+                        {
+                            "code": "3.11",
+                            "title": "Prototype / Industry Adoption",
+                            "points": 40,
+                            "maxPoints": 40,
+                            "proof": "Industry adoption certificate",
+                            "rules": [
+                                "one_time"
+                            ]
+                        },
+                        {
+                            "code": "3.12",
+                            "title": "Venture Capital / Angel Funding",
+                            "points": 40,
+                            "maxPoints": 40,
+                            "proof": "Funding proof",
+                            "rules": [
+                                "one_time"
+                            ]
+                        },
+                        {
+                            "code": "3.13",
+                            "title": "Societal Innovation",
+                            "points": 40,
+                            "maxPoints": 40,
+                            "proof": "Innovation certificate",
+                            "rules": [
+                                "one_time"
+                            ]
+                        },
+                        {
+                            "code": "3.14",
+                            "title": "Research Publications",
+                            "levels": {
+                                "q1_q2": 40,
+                                "q3_q4": 25
+                            },
+                            "maxPoints": 40,
+                            "proof": "Published paper proof",
+                            "rules": [
+                                "highest_level_only"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "categoryId": "hackathons",
+                    "categoryName": "Hackathons & Skilling",
+                    "activities": [
+                        {
+                            "code": "3.15",
+                            "title": "National Hackathons",
+                            "levels": {
+                                "first": 40,
+                                "second": 35,
+                                "third": 30
+                            },
+                            "maxPoints": 40,
+                            "proof": "Hackathon winner certificate",
+                            "rules": [
+                                "highest_level_only"
+                            ]
+                        },
+                        {
+                            "code": "3.16",
+                            "title": "International Hackathons",
+                            "levels": {
+                                "winner": 40,
+                                "runner_up": 35,
+                                "participation": 30
+                            },
+                            "maxPoints": 40,
+                            "proof": "Hackathon certificate",
+                            "rules": [
+                                "highest_level_only"
+                            ]
+                        },
+                        {
+                            "code": "3.17",
+                            "title": "Skilling Courses (Approved)",
+                            "pointsPerHour": 1,
+                            "maxPoints": 40,
+                            "proof": "Course completion certificate",
+                            "rules": [
+                                "per_hour"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "studentCategories": {
+        "regular": {
+            "label": "Regular",
+            "totalRequired": 120,
+            "perGroupMin": 40,
+            "description": "Regular B.Tech students (4-year program)"
+        },
+        "lateralEntry": {
+            "label": "Lateral Entry",
+            "totalRequired": 90,
+            "perGroupMin": 30,
+            "description": "B.Tech Lateral Entry students"
+        },
+        "pwd": {
+            "label": "PwD",
+            "totalRequired": 60,
+            "perGroupMin": 20,
+            "description": "Persons with Disabilities"
+        }
+    },
+    "calculatorRules": {
+        "highestLevelOnly": "If multiple levels are claimed for the same activity, only the highest level counts",
+        "winnerOverridesParticipation": "Cannot claim both participation and winner points for the same event",
+        "perActivityCap": "Each activity has a maximum points ceiling (maxPoints)",
+        "perGroupCap": "Maximum points counted per group is capped (40 for regular, 30 for lateral, 20 for PwD)",
+        "groupMinimum": "Minimum points must be achieved in each group to pass"
+    },
+    "metadata": {
+        "scheme": "KTU 2024 Scheme",
+        "source": "KTU Activity Points Handbook (2024)",
+        "lastUpdated": "2026-01-16"
+    }
+}
